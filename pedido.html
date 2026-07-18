@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+
+    <title>Haz tu pedido</title>
+    <link rel="stylesheet" href="css/pedido.css">
+</head>
+<body>
+
+    <!-- Pedido -->
+    <main class="pedido">
+    <div class="overlay"></div>
+
+        <header class="pedido__header">
+            <a href="index.html" class="pedido__back">
+                Volver
+            </a>
+        
+            <div class="pedido__title">
+                <h1>MONTA TU PEDIDO</h1>
+                <p>( Arrastra las pegatinas hasta la cesta )</p>
+            </div>
+        </header>
+
+        <!-- Mesa -->
+         <section class="mesa">
+
+            <!-- Productos -->
+            
+            <!-- Burgers -->
+            <article class="sticker sticker--1" data-id="1" data-name="Cheese Bacon" data-price="6.50">
+                <img src="media/img_cheeseBacon.png" alt="Cheese Bacon">
+            </article>
+
+            <article class="sticker sticker--2" data-id="2" data-name="Spicy Chicken" data-price="10.00">
+                <img src="media/img_SpicyChickensricker.png" alt="Spicy Chicken">
+            </article>
+
+            <article class="sticker sticker--3" data-id="3" data-name="Suprema Excalibur" data-price="12.00">
+                <img src="media/img_SupremaExcalibursticker.png" alt="Suprema Excalibur">
+            </article>
+
+            <article class="sticker sticker--4" data-id="4" data-name="Suprema BBQ" data-price="12.00">
+                <img src="media/img_SupremaBBQsticker.png" alt="Suprema BBQ">
+            </article>
+
+            <article class="sticker sticker--5" data-id="5" data-name="Suprema G.O.A.T" data-price="12.00">
+                <img src="media/img_SupremaG.O.A.Tsticker.png" alt="SupremaGOAT">
+            </article>
+
+            <!-- Entrantes -->
+            <article class="sticker sticker--6" data-id="6" data-name="Patatas" data-price="4.50">
+                <img src="media/img_patatas.png" alt="Patatas">
+            </article>
+
+            <article class="sticker sticker--7" data-id="7" data-name="Nuggets" data-price="7.00">
+                <img src="media/img_nuggets.png" alt="Nuggets">
+            </article>
+
+            <article class="sticker sticker--8" data-id="8" data-name="Alitas" data-price="8.50">
+                <img src="media/img_alitas.png" alt="Alitas">
+            </article>
+
+            <article class="sticker sticker--9" data-id="9" data-name="Aros Cebolla" data-price="6.90">
+                <img src="media/img_aroscebolla.png" alt="Aros Cebolla">
+            </article>
+
+            <article class="sticker sticker--10" data-id="10" data-name="Croquetas" data-price="7.00">
+                <img src="media/img_croquetas.png" alt="Croquetas">
+            </article>
+
+
+            <!-- Ensalada -->
+            <article class="sticker sticker--11" data-id="11" data-name="Ensalada" data-price="5.90">
+                <img src="media/img_ensalada.png" alt="Ensalada">
+            </article>
+
+            <!-- Bebidas -->
+            <article class="sticker sticker--12" data-id="12" data-name="Coca-Cola" data-price="2.80">
+                <img src="media/img_bebidamenu.png" alt="Coca-Cola">
+            </article>
+
+            <article class="sticker sticker--13" data-id="13" data-name="Agua" data-price="2.00">
+                <img src="media/img_agua.png" alt="Agua">
+            </article>
+
+            <article class="sticker sticker--14" data-id="14" data-name="Nestea" data-price="2.80">
+                <img src="media/img_nestea.png" alt="Nestea">
+            </article>
+            
+            <article class="sticker sticker--15" data-id="15" data-name="Fanta" data-price="2.80">
+                <img src="media/img_fanta.png" alt="Fanta">
+            </article>
+
+            <!-- Postres -->
+            <article class="sticker sticker--16" data-id="16" data-name="Tarta de Queso" data-price="5.90">
+                <img src="media/img_postresmenu.png" alt="Tarta de Queso">
+            </article>
+
+            <article class="sticker sticker--17" data-id="17" data-name="Tarta tres chocolates" data-price="5.90">
+                <img src="media/img_tarta3chocolates.png" alt="Tarta 3chocolates">
+            </article>
+
+            <article class="sticker sticker--18" data-id="18" data-name="Tarta de la abuela" data-price="5.90">
+                <img src="media/img_tartaabuela.png" alt="Tarta abbuela">
+            </article>
+
+
+            <!-- Cesta -->
+             <aside class="cesta">
+                <div class="cesta__dropzone">
+                    <img src="media/img_carrito.png" alt="Cesta de la compra">
+                    <span class="cesta__contador">0</span>
+                </div>
+             </aside>
+         </section>
+
+         <!-- Ticket -->
+          <aside class="ticket">
+            <div class="ticket__header">
+                <h2>Tu pedido</h2>
+                <button class="ticket__close"></button>
+            </div>
+
+            <div class="ticket__body">
+                <ul class="ticket__lista">
+                    <!-- Js -->
+                </ul>
+            </div>
+            
+            <div class="ticket__footer">
+
+                <div class="ticket__total">
+                    <span>Total</span>
+                    <strong>0,00 €</strong>
+                </div>
+                <button class="btn btn--pedido" type="button">Realizar pedido</button>
+            </div>
+        </aside>
+    </main>
+
+    <script src="js/pedido.js"></script>
+
+</body>
+</html>
+
+
